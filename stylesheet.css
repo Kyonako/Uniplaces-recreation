@@ -156,6 +156,7 @@ header .sign-up a:hover {
     background-image: url(./resources/citybackground.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 40.5rem;
     width: auto;
     margin: 0 auto;
@@ -250,6 +251,18 @@ header .sign-up a:hover {
         margin: 0;
     }
 
+    #check-in {
+        width: 92%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .main-search h1 {
+        font-size: 1.85rem;
+    }
+
 }
 
  
@@ -270,11 +283,9 @@ header .sign-up a:hover {
 .cities h3 {
     text-align: center;
     text-shadow: rgb(163 153 153 / 86%) 0px 1px 1px;
-}
-
-#discover {
     padding-bottom: 4rem;
 }
+
 
 .cities-container {
     display: flex;
@@ -316,20 +327,27 @@ header .sign-up a:hover {
 
     .cities h2 {
         padding-right: 0;
+        font-size: 1.25rem;
+    }
+
+    .cities h3 {
+        font-size: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 
     .city-container img {
-        width: 25rem;
-        height: 27rem;
+        width: 15rem;
+        height: 17rem;
         margin-bottom: 0.2rem;
     }
 
     .city-container h4 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     
     .city-container p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
 }
@@ -355,6 +373,11 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
+
+    footer {
+        display: flex;
+        align-items: center;
+    }
 
     footer img {
         display: none;

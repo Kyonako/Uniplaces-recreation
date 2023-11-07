@@ -22,7 +22,7 @@ body, h4 {
 
 header {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     border-bottom: solid 1px #c6c1c1;
     z-index: 100;
     box-shadow: 0 1px 0 rgba(15, 14, 14, 0.1);
@@ -99,6 +99,57 @@ header .sign-up a:hover {
     border: 1px solid rgb(0, 173, 239);
 }
 
+#hamburger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1258px) {
+
+    header li {
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1136px) {
+
+    header .logo {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+}
+
+@media only screen and (max-width: 1089px) {
+
+    header .nav {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+
+    header li {
+        padding-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 949px) {
+
+    header .nav, .sign-up, .sign-in {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        width: 3rem;
+        padding: 0 1rem;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+}
+
 /* * Search Section *  */
 
 .main-search {
@@ -169,7 +220,39 @@ header .sign-up a:hover {
     border: 1px solid rgb(0, 173, 239);
 }
 
+@media only screen and (max-width: 1136px) {
 
+    .search-bar-container {
+        width: 75%;
+        }
+
+}
+
+@media only screen and (max-width: 1089px) {
+
+.search-bar-container {
+    width: 80%;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+
+    #lupa {
+        display: none;
+    }
+
+    .search-bar-container {
+        display: grid;
+        justify-content: initial;
+    }
+
+    #search-button {
+        margin: 0;
+    }
+
+}
+
+ 
 /* Cities section */
 
 .cities {
@@ -225,6 +308,33 @@ header .sign-up a:hover {
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 665px) {
+
+    .cities-container {
+        flex-direction: column;
+    }
+
+    .cities h2 {
+        padding-right: 0;
+    }
+
+    .city-container img {
+        width: 25rem;
+        height: 27rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .city-container h4 {
+        font-size: 1.5rem;
+    }
+    
+    .city-container p {
+        font-size: 1rem;
+    }
+
+}
+
+
 /* Footer  */
 
 footer {
@@ -242,4 +352,11 @@ footer {
 .terms {
     display: flex;
     gap: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+
+    footer img {
+        display: none;
+    }
 }
